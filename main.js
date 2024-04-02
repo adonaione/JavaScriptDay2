@@ -206,15 +206,51 @@ console.log(people);
 console.log(typeof people); // object
 
 // Accessing
-console.log(poeple[3])
+console.log(people[3])
 
 console.log(people[-1]) // undefined - negative indices do not work 
 
-// Methods
+// Arrays have a built in .length property
+console.log(people.length); // 4
+
+//////////////////
+// Array Methods//
+//////////////////
+
+// arr.push(value) - add value to end of the arr - returns new length
+console.log(people)
+
+let returnVal = people.push("Mary Magdaline");
+console.log(people);
+console.log(returnVal); // should be 5, because it returned the new length after adding
+
+// arr.pop() - will remove the last element and return that element
+let popReturn = people.pop();
+console.log(people);
+console.log(popReturn); // Mary Magdaline returned
 
 
-// Destructuring
+const colors = ['red','orange', 'yellow', 'green', 'blue']
+colors.pop()
+colors.push('violet');
+console.log(colors);
 
+// arr.unshift(value) will add the value to the beginning and return new length
+console.log(people);
+
+let unshiftReturn = people.unshift("Master Osho");
+console.log(people);
+console.log(unshiftReturn);
+
+
+//  arr.shift() removes the first item from an array and returns it
+let shiftReturn = people.shift();
+console.log(people);
+console.log(shiftReturn); //  Master Osho
+
+////////////////////
+// Destructuring //
+//////////////////
 
 // Rest Operator ...
 
